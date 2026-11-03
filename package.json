@@ -1,0 +1,44 @@
+{
+  "name": "@hyperttp/adapter-axios",
+  "version": "0.2.0",
+  "description": "",
+  "keywords": [
+    "events",
+    "in-memory",
+    "typescript"
+  ],
+  "homepage": "https://github.com/IT-IF-OR/hyperttp-adapter-axios#readme",
+  "bugs": {
+    "url": "https://github.com/IT-IF-OR/hyperttp-adapter-axios/issues"
+  },
+  "license": "MIT",
+  "author": "dirold2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IT-IF-OR/hyperttp-adapter-axios.git"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "dependencies": {
+    "@hyperttp/core": "^3.0.3",
+    "hyperttp": "^0.7.2"
+  },
+  "peerDependencies": {
+    "@hyperttp/types": "^0.5.3",
+    "axios": "^1.21.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
