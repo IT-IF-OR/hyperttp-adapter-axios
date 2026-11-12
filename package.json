@@ -1,6 +1,6 @@
 {
   "name": "@hyperttp/adapter-axios",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "description": "",
   "keywords": [
@@ -41,29 +41,32 @@
     "format": "oxlint --fix . && oxfmt .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "build": "node ../../scripts/build-package.ts",
+    "pub": "d-publish",
+    "dist": "d-dist",
+    "build": "tsc && esbuild \"dist/**/*.js\" --outdir=dist --allow-overwrite --minify --sourcemap && d-build",
     "clean": "node --input-type=module -e 'import { rmSync } from \"node:fs\"; rmSync(\"dist\", { recursive: true, force: true });'",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hyperttp/core": "^3.0.3",
-    "hyperttp": "^0.7.2"
+    "@hyperttp/core": "^3.0.4",
+    "hyperttp": "^0.7.4"
   },
   "devDependencies": {
+    "@dirold2/dev-tools": "^1.1.3",
     "@types/node": "^26.6.6",
     "@vitest/coverage-v8": "^5.1.0",
     "chalk": "^6.0.1",
     "dotenv-cli": "^11.1.0",
     "esbuild": "^0.28.2",
-    "oxfmt": "^0.76.0",
-    "oxlint": "^1.90.0",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
     "typescript": "^7.0.2",
     "vitest": "^5.1.0",
     "@hyperttp/protocol-rest": "^0.1.1"
   },
   "peerDependencies": {
-    "@hyperttp/types": "^0.5.3",
-    "axios": "^1.21.0"
+    "@hyperttp/types": "^0.5.4",
+    "axios": "^1.21.1"
   },
   "engines": {
     "node": ">=18"
