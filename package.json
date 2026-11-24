@@ -1,6 +1,6 @@
 {
   "name": "@hyperttp/adapter-axios",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": false,
   "description": "",
   "keywords": [
@@ -48,7 +48,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hyperttp/core": "^3.0.7",
+    "@hyperttp/core": "^3.0.8",
     "hyperttp": "^0.7.6"
   },
   "devDependencies": {
