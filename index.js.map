@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": ["export { adapter, axios, createAxios } from \"./axios.js\";\n\nexport type { HyperAxiosConfig } from \"./types/index.js\";\n\nexport { default } from \"./axios.js\";\n"],
+  "mappings": "aAAA,OAAS,QAAS,MAAO,gBAAmB,aAI5C,OAAS,YAAe",
+  "names": []
+}
